@@ -9,7 +9,7 @@ import json
 #     os.path.join(project_dir, database_filename))
 
 # database_path = "postgres://postgres:1234@localhost:5432/casting_agency"
-database_path = "postgres://avmoqamvwrxicx:fca94c68018e725c039bc1180bcda833ecadfad4f40f23848735ff00167e5c2a@ec2-35-171-31-33.compute-1.amazonaws.com:5432/d145ebjr762qhj"
+database_path = "postgres://yxjnssfvghxaat:27e085427cbe0baa2fc96988fc91799749d15efad0352adc5900260296ebf230@ec2-52-7-39-178.compute-1.amazonaws.com:5432/d43uicprfu9bm7"
 
 db = SQLAlchemy()
 
