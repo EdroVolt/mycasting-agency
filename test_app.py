@@ -25,18 +25,6 @@ class CapstoneTestCase(unittest.TestCase):
 
         setup_db(self.app)
 
-        # self.assistant_headers =
-        # self.director_headers =
-        # self.producer_headers = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik4wUXdRVEUwTnpFMk0wTTVRVVF4TXpGRE9FTXhOMFkyUTBORk5FVkZPRFkxUlRRelJUa3hOQSJ9.eyJpc3MiOiJodHRwczovL2Rldi0xcGwzLTQ2NS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWU3ZjUzZTI5ZDhhMTgwYzg0ZGE2NGNmIiwiYXVkIjoiQ2FzdGluZ0FnZW5jeSIsImlhdCI6MTU5MDQyMzU3NiwiZXhwIjoxNTkwNTA5OTc2LCJhenAiOiJyN2hjMnRhYnYyaTZpOHJYUEJXMm4zbFFLN29rbEhybiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOmFjdG9ycyIsInBhdGNoOm1vdmllcyIsInBvc3Q6YWN0b3JzIiwicG9zdDptb3ZpZXMiXX0.0ITdRZhkiiMNW0A8Hjyxrb3x3-H9rItEd4HO0a2gWuf_qBphNihZRR-nRsV4c8zyory-mnT-jSrpzcXa9wDlaAP-ZFqCk70uLINUSxO-EWVGYSkie41V-oTIaaYMQoXJ85EREG3rAmZW2FbrqGvI3JZouMTcRv6fRVvfwx5d3ym5_h1rKXuBkXnjKW594N-7_GqRNiE2zmxWeIYzUDqJJN41OkIm8H26pdYYRsEBaFsksMr28hxpjLymA-2zvcPUNsz-MO_Bf8EsGl795x7MsuxV-CvMyHVKdv8YyV6ule6qupI2A6wszYlWo-reAYFP2OQq9FA4MnGe_8XHONMX9g'
-
-        # self.assistant_headers = {
-        #     "Content-Type": "application/json",
-        #     "Authorization": os.getenv('CASTING_ASSISTANT')
-        # }
-        # self.director_headers = {
-        #     "Content-Type": "application/json",
-        #     "Authorization":  os.getenv('CASTING_DIRECTOR')
-        # }
         self.producer_headers = os.environ.get('PRODUCER_TOKEN')
         # binds the app to the current context
         with self.app.app_context():
@@ -50,7 +38,6 @@ class CapstoneTestCase(unittest.TestCase):
 
 
 # ................................................ POST: /actors endpoint test ................................................
-
 
     def test_01_post_actors(self):
         res = self.client().post('/actors',

@@ -23,12 +23,7 @@ def create_app(test_config=None):
     def hi():
         return jsonify({
             'greating': 'Welcome to my Awsome API. Thank your for using it',
-            'Heroku_live_link': '',
-            'tokens_for_test_auth': {
-                'Casting_Assistant': '',
-                'Casting Director': '',
-                'Executive Producer': '',
-            }
+            'Heroku_live_link': 'https://mycasting-agency.herokuapp.com',
         })
 
     @app.route('/actors', methods=['GET'])

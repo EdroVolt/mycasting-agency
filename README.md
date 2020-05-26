@@ -235,3 +235,5 @@ Our API have **3** roles :
 
 there is a Postman test collection included within the project files
 you can use it for testing
+
+you can find fresh tokens in `.env` file
