@@ -21,9 +21,15 @@ def create_app(test_config=None):
 
     @app.route('/', methods=['GET'])
     def hi():
-        # headers = request.headers
-        # print(headers)
-        return "hello world"
+        return jsonify({
+            'greating': 'Welcome to my Awsome API. Thank your for using it',
+            'Heroku_live_link': '',
+            'tokens_for_test_auth': {
+                'Casting_Assistant': '',
+                'Casting Director': '',
+                'Executive Producer': '',
+            }
+        })
 
     @app.route('/actors', methods=['GET'])
     @requires_auth('get:actors')

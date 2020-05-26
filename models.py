@@ -3,13 +3,6 @@ from sqlalchemy import Column, String, Integer
 from flask_sqlalchemy import SQLAlchemy
 import json
 
-# database_filename = "database.db"
-# project_dir = os.path.dirname(os.path.abspath(__file__))
-# database_path = "sqlite:///{}".format(
-#     os.path.join(project_dir, database_filename))
-
-# database_path = "postgres://postgres:1234@localhost:5432/casting_agency"
-# database_path = "postgres://avmoqamvwrxicx:fca94c68018e725c039bc1180bcda833ecadfad4f40f23848735ff00167e5c2a@ec2-35-171-31-33.compute-1.amazonaws.com:5432/d145ebjr762qhj"
 
 db = SQLAlchemy()
 
@@ -30,8 +23,6 @@ def setup_db(app):
 db_drop_and_create_all()
     drops the database tables and starts fresh
     can be used to initialize a clean database
-    !!NOTE you can change the database_filename variable
-    to have multiple verisons of a database
 '''
 
 
