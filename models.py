@@ -8,8 +8,8 @@ import json
 # database_path = "sqlite:///{}".format(
 #     os.path.join(project_dir, database_filename))
 
-# database_path = "postgres://postgres:1234@localhost:5432/casting_agency"
-database_path = "postgres://yxjnssfvghxaat:27e085427cbe0baa2fc96988fc91799749d15efad0352adc5900260296ebf230@ec2-52-7-39-178.compute-1.amazonaws.com:5432/d43uicprfu9bm7"
+database_path = "postgres://postgres:1234@localhost:5432/casting_agency"
+# database_path = "postgres://yxjnssfvghxaat:27e085427cbe0baa2fc96988fc91799749d15efad0352adc5900260296ebf230@ec2-52-7-39-178.compute-1.amazonaws.com:5432/d43uicprfu9bm7"
 
 db = SQLAlchemy()
 
